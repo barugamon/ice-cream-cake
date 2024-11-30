@@ -21,13 +21,33 @@
             background-color: rgb(19, 19, 45);
         }
 
+        .nav-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
         .gif-container {
             text-align: center;
             margin: 20px 0;
         }
 
         .gif-container img {
-            max-width: 60%;
+            width: 60%;
             height: auto;
             border-radius: 10px;
         }
@@ -89,10 +109,22 @@
             h1 {
                 font-size: 2em;
             }
+
+            .gif-container img {
+                width: 70%;
+            }
+
+            .nav-button {
+                top: 10px;
+                right: 10px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
+    <a href="order.html" class="nav-button">BUY CAKE</a>
+
     <div class="gif-container">
         <img src="icecreamcake.gif" alt="Ice Cream Cake Animation">
     </div>
